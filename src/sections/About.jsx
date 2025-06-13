@@ -1,6 +1,10 @@
 import { section } from 'motion/react-client'
 import React, { useRef } from 'react'
 import Card from '../components/Card'
+import { Globe } from '../components/globe'
+import CopyEmailButton from '../components/CopyEmailButton'
+import FrameWorks from '../components/FrameWorks'
+
 
 
 const About = () => {
@@ -46,15 +50,32 @@ const About = () => {
                             Time Zone
                         </p>
                         <p className='subtext'>
-                            I Live 
+                            I Live on Earth and open to work remotly
                         </p>
+
+                        <figure className='absolute left-[30%] top-[10%]'>
+                                <Globe />
+                        </figure>
                 </div>
 
             </div>
             {/* Grid 4 */}
-            <div className='flex grid-special-color grid-4'></div>
+            <div className='flex grid-special-color grid-4'>
+
+                    <div className='flex flex-col items-center justify-center gap-4 size-full'>
+                        <p className='text-center headtext'>Do you want to start a project together?</p>
+                        <CopyEmailButton />
+                    </div>
+
+            </div>
             {/* Grid 5 */}
-            <div className='flex grid-default-color grid-5'></div>
+            <div className='flex grid-default-color grid-5'>
+
+                    <div className='absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125'>
+                            <FrameWorks />
+                    </div>
+
+            </div>
           
         </div>
     </section>
